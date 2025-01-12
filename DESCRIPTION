@@ -1,4 +1,4 @@
-Package: IBA_data_utils
+Package: IBADataUtils
 Type: Package
 Title: Insect Biome Atlas Data Utility Functions
 Version: 0.1
