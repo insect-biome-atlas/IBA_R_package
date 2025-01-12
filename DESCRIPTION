@@ -1,0 +1,5 @@
+Package: IBA_data_utils
+Type: Package
+Title: Insect Biome Atlas Data Utility Functions
+Version: 0.1
+RoxygenNote: 7.3.2
