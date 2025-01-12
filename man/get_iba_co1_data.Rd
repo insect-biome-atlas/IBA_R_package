@@ -15,21 +15,21 @@ get_iba_co1_data(
 )
 }
 \arguments{
-\item{country}{The country for which data is requested (`"MG"` or `"SG"`).}
+\item{country}{The country for which data is requested (\code{"MG"} or \code{"SG"}).}
 
-\item{dataset}{The dataset requested: `"lysate"`, `"homogenate"`, `"soil"`,
-`"litter"` or `"ethanol"`. See *Details* for more information.}
+\item{dataset}{The dataset requested: \code{"lysate"}, \code{"homogenate"}, \code{"soil"},
+\code{"litter"} or \code{"ethanol"}. See \emph{Details} for more information.}
 
 \item{data_path}{The path to the processed data. Defaults to
-`"~/dev/figshare-repos/iba/processed_data/v3/"`}
+\code{"~/dev/figshare-repos/iba/processed_data/v3/"}}
 
 \item{metadata_path}{The path to the metadata (raw data). Defaults to
-`"~/dev/figshare-repos/iba/raw_data/v6/"`}
+\code{"~/dev/figshare-repos/iba/raw_data/v6/"}}
 
 \item{calibrate}{Whether to calibrate data using biological spike-ins.
-Defaults to `FALSE`.}
+Defaults to \code{FALSE}.}
 
-\item{remove_spikes}{Whether to remove spike-ins. Defaults to `TRUE`.}
+\item{remove_spikes}{Whether to remove spike-ins. Defaults to \code{TRUE}.}
 
 \item{format}{The desired data format ("data.table" or "data.frame")}
 }
@@ -43,28 +43,28 @@ biological spike-ins, if desired, and spike-in data can either be removed
 or kept, as desired.
 }
 \details{
-The `dataset` parameter allows the user to select the desired data subset.
-The available options are `lysate`, `homogenate`, `soil`, `litter` and
-`ethanol`. For "MG" (Madagascar), only `lysate` and `litter` data are
+The \code{dataset} parameter allows the user to select the desired data subset.
+The available options are \code{lysate}, \code{homogenate}, \code{soil}, \code{litter} and
+\code{ethanol}. For "MG" (Madagascar), only \code{lysate} and \code{litter} data are
 available. It is possible to request several subsets at once by concatenating
-the dataset names. For instance, `lysate|homogenate` would retrieve both
+the dataset names. For instance, \code{lysate|homogenate} would retrieve both
 lysate and homogenate data.
 
 Note that only biological spike-in data are used to
 calibrate reads. Spike-ins are identified by occurrence patterns (occurring
-in more than 80% of samples) and taxonomic annotation (belonging to Insecta
-if bioliogical spike-ins), calling the function `identify_spikes`.
+in more than 80\% of samples) and taxonomic annotation (belonging to Insecta
+if bioliogical spike-ins), calling the function \code{identify_spikes}.
 
 The return value is an OTU read table that contains the full taxonomic
 annotation of the OTU (using the recommended IBA annotation combining SINTAX
 and EPA-NG annotations). The headers of the read columns are the
-`sampleID_NGI` identifiers associated with the sequencing run in which the
+\code{sampleID_NGI} identifiers associated with the sequencing run in which the
 data were generated. Thus, in a merged dataset it is not possible to
 distinguish the data subsets without looking into the IBA metadata files.
 
-Use the function `get_iba_sample_data` to get the associated field sample
+Use the function \code{get_iba_sample_data} to get the associated field sample
 and site metadata for those sequencing run identifiers. The function
-`get_iba_taxon_data` can be used to retrieve such data together with read
+\code{get_iba_taxon_data} can be used to retrieve such data together with read
 numbers for specific taxa (individual OTUs or groups of OTUs with the same
 taxonomic annotation at some rank).
 }

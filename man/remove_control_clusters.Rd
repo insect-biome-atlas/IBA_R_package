@@ -30,7 +30,7 @@ taxonomic annotations for all ASVs)}
 \item{cutoff}{Threshold for removing control clusters, given in terms of the
 proportion of control samples in which a cluster is allowed to occur before
 it is removed. The default threshold is set to 0.05, meaning that clusters
-occurring in more than 5% of control samples will be removed.}
+occurring in more than 5\% of control samples will be removed.}
 }
 \value{
 A list containing the OTU table with filtered counts, with control

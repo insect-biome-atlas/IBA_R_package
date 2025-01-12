@@ -17,7 +17,7 @@ ASV taxonomy is provided, the annotation of the representative ASVs is used.}
 
 \item{cutoff}{Cutoff for identifying spike-in clusters, given in terms of
 the proportion of samples. The default cutoff is set to 0.8, meaning that
-clusters occurring in more than 80% of `spikein_samples` are identified as
+clusters occurring in more than 80\% of \code{spikein_samples} are identified as
 candidate spike-in clusters.}
 }
 \value{
@@ -28,7 +28,7 @@ the identified biological spike-in clusters is also returned.
 \description{
 The function identifies biological and synthetic spike-ins using occurrence
 pattern. Specifically, spike-ins are identified as clusters occurring in
-more than the `cutoff` proportion of samples. For biological spike-ins, it
+more than the \code{cutoff} proportion of samples. For biological spike-ins, it
 is also required that they are annotated as belonging to Insecta. Synthetic
 spike-ins are identified as those candidate spike-in clusters missing a
 taxonomic annotation.

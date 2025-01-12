@@ -3,4 +3,5 @@ Type: Package
 Title: Insect Biome Atlas Data Utility Functions
 Version: 0.1
 Encoding: UTF-8
+Roxygen: list(markdown=TRUE)
 RoxygenNote: 7.3.2

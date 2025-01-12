@@ -19,8 +19,8 @@ A list of statistics on the clusters to be removed or kept.
 This function computes various statistics for the reads of a set of OTUs
 or ASVs identified for potential removal (for instance, because they occur
 in too many control samples). The set is specified as an index (a vector of
-`TRUE` and `FALSE` values of the same length as the number of rows in the 
-`counts`table, and should specify the rows identified for potential removal.
+\code{TRUE} and \code{FALSE} values of the same length as the number of rows in the
+\code{counts}table, and should specify the rows identified for potential removal.
 Statistics are provided for both the rows identified for removal and the rows
 that would remain after removal.
 }

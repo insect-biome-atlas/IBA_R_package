@@ -27,12 +27,12 @@ calibrates the data using the biological spike-in data, if this is requested.
 Finally, it removes the spike-ins, if this is requested.
 }
 \details{
-In the OTU table passed in as `counts`, the first column is expected to
-contain the OTU cluster names. The function handles both `data.frame` and
-`data.table` formats for the OTU table. Note that data in `data.table` format
+In the OTU table passed in as \code{counts}, the first column is expected to
+contain the OTU cluster names. The function handles both \code{data.frame} and
+\code{data.table} formats for the OTU table. Note that data in \code{data.table} format
 takes a long time to calibrate, at least on MacIntosh systems.
 
-If some of the specified `samples` columns do not contain spike-in reads at
+If some of the specified \code{samples} columns do not contain spike-in reads at
 all, the read numbers are not changed.
 
 The calibrated read numbers are returned as integers. The numbers are rounded
